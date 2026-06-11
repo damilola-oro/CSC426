@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(197, 184, 184);
+}
+
+.calculator-app {
+    background-color: rgb(1, 24, 24);
+    height: 450px;
+    width: 300px;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.calculator-app::after {
+    content: '';
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    position: absolute;
+    top: 0;
+    background-color: rgb(105, 104, 104);
+    border-radius: 1rem;
+    opacity: 30%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.display-input-output {
+    width: 100%;
+    background-color: rgb(63, 61, 61);
+    border-radius: 1rem 1rem 0 0;
+    height: 90px;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 5px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input-keys {
+    margin-top: 10px;
+}
+
+.input-keys input {
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+    color: whitesmoke;
+    transition: .3s ease-in-out;
+}
+
+.input-keys input:hover {
+    box-shadow: 0px 0px 10px burlywood;
+}
+
+.input-keys input:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#input-keys1 input {
+    margin-left: 10px;
+}
+
+#input-keys2 input {
+    margin-left: 10px;
+}
+
+#input-keys3 input {
+    margin-left: 10px;
+}
+
+#input-keys4 input {
+    margin-left: 10px;
+}
+
+#input-keys5 input {
+    margin-left: 10px;
+}
+
+.input-keys .operators {
+    color: orange;
+}
